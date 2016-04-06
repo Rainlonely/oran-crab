@@ -1,0 +1,13 @@
+{
+  "name": "Oran-Crab",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.4",
+    "jquery": "^2.2.3",
+    "jquery.transit": "^0.9.12"
+  }
+}
+ 
