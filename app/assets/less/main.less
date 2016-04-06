@@ -1,24 +1,26 @@
 @import "variables.less";
-body{
-	padding: 20px 0;
-}
 header{
 	padding: 0 20px;
-	h1{}
-	p{ color:#e5e5e5; font: 1.0em;}
+	h1{
+		font-size: 20px; 
+		margin:0;
+	}
+	p{ 
+		color:#e5e5e5; 
+		font-size: 1.0em;
+	}
 }
 aside{
-	margin-top: 80px;
-	width:300px;
-	float: left;
+	position: absolute;
+	left:0;
+	top: 80px;
 	ul{
 		list-style: none;
 		padding: 0;
 		li{
 			padding: 10px 20px;
-			border-left: 4px solid transparent;
+			//border-left: 4px solid transparent;
 			line-height: 20px;
-			
 			i{
 				display: inline-block;
 				width:20px;
@@ -29,7 +31,7 @@ aside{
 			a{
 				color: #6d6d6d;
 				display: inline-block;
-				font-size: 1.4em;
+				font-size: 1.2em;
 				visibility: hidden;
 				opacity: 0;
 				transition: all .3s ease-in-out;
@@ -46,7 +48,7 @@ aside{
 			}
 		}
 		li.active{
-			border-left: 4px solid @brand-primary;
+			//border-left: 4px solid @brand-primary;
 			i{background-color: @brand-primary;}
 			a{
 				color: @brand-primary;
@@ -57,4 +59,19 @@ aside{
 			}
 		}
 	}
+	.cursor{
+		position:absolute;
+		top:0;
+		left:0;
+		width: 4px;
+		height: 45px;
+		background-color: @brand-primary;
+		transition: top 0.3s ease-in-out;
+	}
 }
+.tab-pane{
+	height: 100%;
+	.content{height: 100%;}	
+}
+
+@import "cnx01.less";

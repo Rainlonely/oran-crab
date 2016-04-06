@@ -56,6 +56,20 @@ module.exports = function (grunt) {
                     ".tmp/styles/bootstrap.css": "<%= web.app %>/assets/less/bootstrap.less",
                     ".tmp/styles/variables.css": "<%= web.app %>/assets/less/variables.less",
                     ".tmp/styles/main.css": "<%= web.app %>/assets/less/main.less"
+                    // ".tmp/styles/cnx01.css": "<%= web.app %>/assets/less/cnx01.less",
+                    // ".tmp/styles/cnx02.css": "<%= web.app %>/assets/less/cnx02.less",
+                    // ".tmp/styles/cnx03.css": "<%= web.app %>/assets/less/cnx03.less",
+                    // ".tmp/styles/cnx04.css": "<%= web.app %>/assets/less/cnx04.less",
+                    // ".tmp/styles/cnx05.css": "<%= web.app %>/assets/less/cnx05.less",
+                    // ".tmp/styles/cnx06.css": "<%= web.app %>/assets/less/cnx06.less",
+                    // ".tmp/styles/cnx07.css": "<%= web.app %>/assets/less/cnx07.less",
+                    // ".tmp/styles/cnx08.css": "<%= web.app %>/assets/less/cnx08.less",
+                    // ".tmp/styles/cnx09.css": "<%= web.app %>/assets/less/cnx09.less",
+                    // ".tmp/styles/cnx10.css": "<%= web.app %>/assets/less/cnx10.less",
+                    // ".tmp/styles/cnx11.css": "<%= web.app %>/assets/less/cnx11.less",
+                    // ".tmp/styles/cnx12.css": "<%= web.app %>/assets/less/cnx12.less",
+                    // ".tmp/styles/cnx13.css": "<%= web.app %>/assets/less/cnx13.less",
+                    // ".tmp/styles/cnx14.css": "<%= web.app %>/assets/less/cnx14.less"
                 }
             }
         },
