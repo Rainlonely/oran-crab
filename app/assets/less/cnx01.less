@@ -1,4 +1,5 @@
 #cxn01{
+	transition: all .2s;
 	.right{
 		height: 100%;
 		display: flex;
@@ -13,4 +14,30 @@
 		line-height: 30px;
 		transform: translateY(40);
 	}
+}
+.ele-hide,.tab-pane, .content {
+	transition: all .2s;
+}
+.tab-content > .tab-pane {
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+.tab-pane.active {
+	height: auto;
+	visibility: visible;
+}
+.tab-pane .content {
+	opacity: 0;
+}
+.tab-pane.active .content {
+	opacity: 1;
+}
+.tab-pane.active #cxn01_2 {
+	opacity: 1;
+	margin-bottom: 40px;
+}
+.tab-pane.active #cxn01_3 {
+	opacity: 1;
+	margin-top: 0;
 }
