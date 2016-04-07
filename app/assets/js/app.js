@@ -6,12 +6,18 @@ $(document).ready(function(){
 	});
 
 	var cxn01CartoonShow = function(){
-		$('#cxn01_2').transition({opacity: 1, marginBottom: '40px'});
-		$('#cxn01_3').transition({opacity: 1, marginTop: '0px'});
+		$('#cxn01_2').transition({opacity: 1, y: '0',duration: 200});
+		$('#cxn01_3').transition({opacity: 1, y: '0',delay: 200 ,duration: 200});
+	}
+	var cxn01CartoonHide = function(){
+		$('#cxn01_2').transition({opacity: 0, y: '40'});
+		$('#cxn01_3').transition({opacity: 0, y: '40'});
 	}
 
 	$('a[href="#cxn01"]').on('shown.bs.tab', function (e) {
   	cxn01CartoonShow();
 	});
-	
+	$('a[href="#cxn01"]').on('hidden.bs.tab', function (e) {
+  	cxn01CartoonHide();
+	});
 });
