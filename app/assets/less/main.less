@@ -1,4 +1,12 @@
 @import "variables.less";
+
+ol,ul{
+	list-style: none;
+	padding: 0;
+	li{ position: relative;	}
+}
+
+
 header{
 	padding: 20px;
 	h1{
@@ -12,8 +20,8 @@ header{
 		position:relative;
 		.nav-control{
 			background-image: url(../images/sprite-icon.png);
-			background-position: -110px -430px;
 			background-repeat: no-repeat;
+			background-position: -110px -430px;
 			width:14px;
 			height:15px;
 			display: inline-block;
@@ -21,6 +29,9 @@ header{
 			right:0;
 			top:4px;
 			cursor:pointer;
+		}
+		.nav-control.on{
+			background-position: -156px -430px;
 		}
 	}
 	p{
@@ -53,15 +64,22 @@ aside{
 			a{
 				color: #6d6d6d;
 				display: inline-block;
-				font-size: 1.2em;
+				font-size: 18px;
 				visibility: hidden;
 				opacity: 0;
 				width:186px;
-				transition: all .3s ease-in-out;
+				transition: all .6s ease-in-out;
 				position:absolute;
 				top: 12px;
 				left: 0;
 				padding-left: 50px;
+			}
+			a.on{
+				color: #000;
+				visibility:visible;
+				opacity:1;
+				animation-fill-mode: forwards;
+				transform: translateX(20px);
 			}
 		}
 		li:nth-child(1) i{ background-position: 0 0;}
@@ -85,15 +103,26 @@ aside{
 				transform: translateX(20px);
 			}
 		}
-		li.active{
+		li.active a.on{color: @brand-primary;}
+		/*li.active{
 			a{
-				color: @brand-primary;
-				visibility:visible;
-				opacity:1;
+				animation: showhide 2s ease-in-out 2s 1;
 				animation-fill-mode: forwards;
-				transform: translateX(20px);
 			}
-		}
+			@keyframes showhide{
+				0%{
+					transform: translateX(20px);
+					opacity: 1;
+					color: @brand-primary;
+				}
+				100%{
+					opacity: 0;
+					transform: translateX(0);
+					color: #000;
+				}
+			}
+		}*/
+		
 		li:nth-child(1).active i{ background-position: -61px 0;}
 		li:nth-child(2).active i{ background-position: -61px -33px;}
 		li:nth-child(3).active i{ background-position: -61px -66px;}
@@ -119,13 +148,30 @@ aside{
 		transition: top 0.3s ease-in-out;
 	}
 }
+.tab-content{margin-left: 180px;}
 .tab-pane{
 	height: 100%;
-	.content{height: 100%;}
+	.content{
+		height: 100%;
+		.left,.right,.carousel,.carousel-inner,.item{height: 100%;}
+		h2 + p{ font-size: 18px;}
+	}
+}
+.carousel{
+	.carousel-control{
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.carousel-control.left{
+		background-image: url(../images/arrow-left.gif);
+	}
+	.carousel-control.right{
+		background-image: url(../images/arrow-right.gif);
+	}
 }
 
-.ele-hide{
-	opacity: 0.3	;
-}
+.ele-hide{ opacity: 0;}
 
 @import "cnx01.less";
+@import "cnx02.less";
+@import "cnx03.less";

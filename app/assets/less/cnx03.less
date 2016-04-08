@@ -1,0 +1,91 @@
+#carouselCxn03{
+	.item:nth-child(1){
+		.left{
+			.sacle-part{
+				//transform: scale(.7);
+				overflow: hidden;
+			}
+			ul{
+				display: inline-block;
+				float: left;
+		    margin-top: 115px;
+		    line-height: 88px;
+		    margin-left: 126px;
+				li{
+					text-align: right;
+					font-size: 22px;
+					background-position: center right;
+					background-repeat: no-repeat;
+					padding-right: 50px;
+				}
+				li:nth-child(1){background-image: url(../images/cxn03/01/2.png);}
+				li:nth-child(2){background-image: url(../images/cxn03/01/3.png);}
+				li:nth-child(3){background-image: url(../images/cxn03/01/4.png);}
+				li:nth-child(4){background-image: url(../images/cxn03/01/5.png);}
+				li:nth-child(5){background-image: url(../images/cxn03/01/6.png);}
+			}
+			.banner{
+				position: absolute;
+				left: 355px;
+				height: 640px;
+				width: 620px;
+				img{position: absolute;}
+				#cxn03_1_1{left: 0; top: 0;}
+				#cxn03_1_2{ left: 272px; top: 3px; }
+				#cxn03_1_3{ left: 392px; top: 87px; }
+				#cxn03_1_4{ left: 392px; bottom: 0; }
+			}
+		}	
+		.right{
+			height: 65%;
+			padding: 0 160px 0 23px;
+			font-size: 18px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			#cxn03_1_5{margin-top: 100px;}
+			#cxn03_1_6{}
+		}
+	}
+	.item:nth-child(2){
+		.left{
+			position: relative;
+			img{position: absolute;}
+			#cxn03_2_1{ right: 0;top: 0;z-index: 0;}
+			#cxn03_2_2{ z-index: 1; top: 25px;right: 35px;}
+			#cxn03_2_3{ top: 64px; left: 261px;
+			}
+			p{
+		    width: 287px;
+    		font-size: 18px;
+		    display: block;
+		    position: absolute;
+		    top: 300px;
+		    left: 190px;
+		    line-height: 30px;
+			}
+		}
+		.right{
+			ul{
+				li{
+					text-align: left;
+					font-size: 22px;
+					background-position: center left;
+					background-repeat: no-repeat;
+					padding-left: 50px;line-height: 88px;
+				}
+				li:nth-child(1){background-image: url(../images/cxn03/02/2.png);}
+				li:nth-child(2){background-image: url(../images/cxn03/02/3.png);}
+				li:nth-child(3){background-image: url(../images/cxn03/02/4.png);}
+			}
+			.qr-part{
+				font-size: 18px;
+				line-height: 30px;
+				display: flex;
+				align-items: center;
+				margin-top: 140px;
+				p{width: 300px;}
+			}
+		}
+	}
+}

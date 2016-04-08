@@ -1,0 +1,65 @@
+
+#carouselCxn02{
+	.item:nth-child(1){
+		.left{
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+		.right{
+			display: flex;
+			flex-direction:column;
+			justify-content: space-around;
+			.part1{
+				margin-top: 40px;
+			}
+			h2{}
+			ul{
+				li{
+					padding-left: 40px;
+					font-size: 18px;
+					line-height: 60px;
+					i{
+						position: absolute;
+						left: 0;
+						top: 20px;
+						width: 14px;
+						height: 14px;
+						border-radius: 50%;
+						display: inline-block;
+						background-color: @brand-primary;
+					}
+				}
+			}
+			#cxn02_1_7{
+				display: flex;
+				align-items:center;
+				font-size: 18px;
+				line-height: 30px;
+			}
+		}
+	}
+	.item:nth-child(2){
+		ol{
+			width: 80%;
+			margin: 30px auto;
+			display: flex;
+			justify-content: space-between;
+			li{
+				img{width: 100%; height: auto; max-width: 272px;}
+				p{
+					font-size: 18px;
+					margin-top: 60px;
+				}
+				i{
+					position: absolute;
+					background-image: url(../images/icon-next.png);
+					width: 24px;
+					height: 24px;
+					top: 40%;
+					right: -12px;
+				}
+			}
+		}
+	}
+}
