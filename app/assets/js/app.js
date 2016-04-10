@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('.tab-content').css('height',$(window).height()-$('header').height()-40+'px');
 	$('aside ul li').on('click',function(){
-		var liToTop = $(this).offset().top -80;
+		var liToTop = $(this).offset().top;
 		$('.cursor').css('top',liToTop+'px');
 	});
 

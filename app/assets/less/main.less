@@ -45,7 +45,7 @@ header{
 aside{
 	position: absolute;
 	left:0;
-	top: 80px;
+	top: 0;
 	ul{
 		list-style: none;
 		padding: 0;
@@ -140,7 +140,7 @@ aside{
 	}
 	.cursor{
 		position:absolute;
-		top:0;
+		top:90px;
 		left:0;
 		width: 4px;
 		height: 45px;
@@ -148,13 +148,24 @@ aside{
 		transition: top 0.3s ease-in-out;
 	}
 }
-.tab-content{margin-left: 180px;}
+.tab-content{margin-left: 180px; padding-top: 60px;}
 .tab-pane{
 	height: 100%;
 	.content{
 		height: 100%;
 		.left,.right,.carousel,.carousel-inner,.item{height: 100%;}
 		h2 + p{ font-size: 18px;}
+		.banner-title{
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 100%;
+			max-width: 232px;
+			margin: 15px auto;
+			height: 21px;
+			font-size: 26px;
+			line-height: 26px;
+		}
 	}
 }
 .carousel{
@@ -175,3 +186,13 @@ aside{
 @import "cnx01.less";
 @import "cnx02.less";
 @import "cnx03.less";
+@import "cnx04.less";
+@import "cnx05.less";
+@import "cnx06.less";
+@import "cnx07.less";
+@import "cnx09.less";
+@import "cnx10.less";
+@import "cnx11.less";
+@import "cnx12.less";
+@import "cnx13.less";
+@import "cnx14.less";

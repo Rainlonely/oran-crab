@@ -1,0 +1,24 @@
+#cxn13{
+	ul{
+		li{
+			font-size: 18px;
+			position: relative;
+			img{
+				width: 100%;
+				max-width: 160px;
+				display: block;
+				margin:20px auto;
+			}
+		}
+		li:nth-child(4):after,li:nth-child(8):after{right: -9999px;}
+		li:after{
+			content:"";
+			position: absolute;
+			background-image: url(../images/icon-next.png);
+			width: 24px;
+			height: 24px;
+			top: 80px;
+			right: 0;
+		}
+	}
+}

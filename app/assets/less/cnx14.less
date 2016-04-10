@@ -1,0 +1,82 @@
+#cxn14{
+	.nav.nav-tabs{
+		border:none;
+		margin-top: 40px;
+		font-size: 18px;
+		a{font-size: 18px;}
+		li{width: 30%;}
+	}
+	.nav-tabs > li > a{
+		//width: 50%;
+		color: #d5d5d5;
+		border-width: 0 0 2px 0;
+		border-style: solid;
+		border-color: #d5d5d5;
+		margin-right: 0;
+	}
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+		border-width: 0 0 2px 0;
+		border-style: solid;
+		border-color: @brand-primary;
+		color: @brand-primary;
+	}
+	.tab-content{
+		margin-left: 0;
+		height: auto!important;
+		width: 60%;
+	}
+	.form-group{
+		.input-box{
+			position: relative;
+			height: 50px;
+			i{
+				display: inline-block;
+				position: absolute;
+				left: 0;
+				
+				width: 50px;
+				height: 50px;
+				z-index: 1;
+			}
+			.icon-phone{background-image: url(../images/cxn14/2.png);}
+			.icon-password{background-image: url(../images/cxn14/3.png);}
+		}
+		.input-box:before,.input-box:after{
+			content:"";
+			position:absolute;
+			display:block;
+			width:100%;
+			height:2px;
+			background-color:#eee;
+			bottom:0;
+			left:0;
+			transition:all 1s;
+		}
+		.input-box::after{
+			background-color:@brand-primary;
+			transform:scaleX(0);
+		}
+		.isactive::after{transform:scaleX(1);}
+		input{
+			width: 100%;
+			height: 100%;
+			border: none;
+			padding-left: 60px;
+		}
+		button:focus,input:focus,input:active{outline: none;}
+		.btn{
+			border-radius: 0; 
+			width: 100%;
+			font-size: 18px;
+		}
+		.btn-half{
+			width: 40%;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			font-size: 14px;
+			padding: 14px 0px;
+		}
+
+	}
+}
