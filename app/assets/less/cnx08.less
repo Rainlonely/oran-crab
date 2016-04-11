@@ -1,0 +1,84 @@
+#cxn08{
+	.content{
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content: space-between;
+	}
+	.nav.nav-tabs{
+		width: 80%;
+		margin: 0 auto;
+		border: none;
+		li:nth-child(1) a{ background-image: url(../images/cxn08/01/5.png);}
+		li:nth-child(2) a{ background-image: url(../images/cxn08/01/6.png);}
+		li:nth-child(3) a{ background-image: url(../images/cxn08/01/7.png);}
+		li:nth-child(4) a{ background-image: url(../images/cxn08/01/8.png);}
+		li:nth-child(1).active a{ background-image: url(../images/cxn08/01/5+.png);}
+		li:nth-child(2).active a{ background-image: url(../images/cxn08/01/6+.png);}
+		li:nth-child(3).active a{ background-image: url(../images/cxn08/01/7+.png);}
+		li:nth-child(4).active a{ background-image: url(../images/cxn08/01/8+.png);}
+	}
+	.nav-tabs > li > a{
+		color: #000;
+		border: none;
+		background-repeat: no-repeat;
+		background-position: top center;
+		padding-top: 70px;
+		font-size: 18px;
+	}
+	.nav-tabs > li.active > a, 
+	.nav-tabs > li.active > a:hover, 
+	.nav-tabs > li.active > a:focus{
+		color: @brand-primary;
+		border: none;
+	}
+	.nav > li > a:hover, 
+	.nav > li > a:focus{
+		background-color: transparent;
+		border: none;
+	}
+
+	.content	.tab-content{
+		height: auto!important;
+		margin-left: 0;
+		.tab-pane{overflow: hidden;}
+		#tab1 {
+			ul{
+				display: 	block;
+				margin: 0 auto;
+				overflow: hidden;
+				text-align: center;
+				padding-top: 10px;
+				li{
+					display: inline-block;
+					font-size: 16px;
+			    width: 22px;
+					position: relative;
+					padding-top: 15px;
+					display: inline-block;
+					vertical-align: top;
+				}
+				li:before{
+					position: absolute;
+					content: "";
+					background-image: url(../images/cxn08/01/4.png);
+					width: 10px;
+					height: 10px;
+					top: 0;
+					left: 5px;
+				}
+			}
+			img{ width: 80%; max-width: 238px;}
+		}
+		#tab2{
+			img{width: 80%; max-width: 1358px;}
+		}
+		#tab3{
+			img{width: 80%; max-width: 1035px;}
+		}
+		#tab4{
+			img{width: 80%; max-width: 857px;}
+		}
+
+	}
+}
