@@ -56,7 +56,8 @@ module.exports = function (grunt) {
                     ".tmp/styles/bootstrap.css": "<%= web.app %>/assets/less/bootstrap.less",
                     ".tmp/styles/variables.css": "<%= web.app %>/assets/less/variables.less",
                     ".tmp/styles/main.css": "<%= web.app %>/assets/less/main.less",
-                    ".tmp/styles/hd.css": "<%= web.app %>/assets/less/hd.less"
+                    ".tmp/styles/hd.css": "<%= web.app %>/assets/less/hd.less",
+                    ".tmp/styles/4k.css": "<%= web.app %>/assets/less/4k.less"
                     
                 }
             }
