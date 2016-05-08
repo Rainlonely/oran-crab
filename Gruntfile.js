@@ -53,11 +53,12 @@ module.exports = function (grunt) {
                 },
                 files: {
                     //target.css file: source.less file
-                    ".tmp/styles/bootstrap.css": "<%= web.app %>/assets/less/bootstrap.less",
-                    ".tmp/styles/variables.css": "<%= web.app %>/assets/less/variables.less",
-                    ".tmp/styles/main.css": "<%= web.app %>/assets/less/main.less",
+                    //".tmp/styles/bootstrap.css": "<%= web.app %>/assets/less/bootstrap.less",
+                    //".tmp/styles/variables.css": "<%= web.app %>/assets/less/variables.less",
+                    //".tmp/styles/main.css": "<%= web.app %>/assets/less/main.less",
                     ".tmp/styles/hd.css": "<%= web.app %>/assets/less/hd.less",
-                    ".tmp/styles/4k.css": "<%= web.app %>/assets/less/4k.less"
+                    ".tmp/styles/4k.css": "<%= web.app %>/assets/less/4k.less",
+                    ".tmp/styles/1280.css": "<%= web.app %>/assets/less/1280.less"
                     
                 }
             }
@@ -159,25 +160,26 @@ module.exports = function (grunt) {
                         cwd: '<%= web.app%>/assets/fonts',
                         dest: '<%= web.dist %>/resources/fonts',
                         src: ['*.*']
-                    },
-                    {
-                        expand: true,
-                        cwd: 'bower_components/bootstrap/fonts',
-                        src: ['*.*'],
-                        dest: '<%= web.dist %>/resources/fonts'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'bower_components/jquery',
-                        src: ['jquery.*'],
-                        dest: '<%= web.dist %>/resources/js'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'bower_components/bootstrap/dist/js',
-                        src: ['bootstrap.min.js'],
-                        dest: '<%= web.dist %>/resources/js'
                     }
+                    //,
+                    // {
+                    //     expand: true,
+                    //     cwd: 'bower_components/bootstrap/fonts',
+                    //     src: ['*.*'],
+                    //     dest: '<%= web.dist %>/resources/fonts'
+                    // },
+                    // {
+                    //     expand: true,
+                    //     cwd: 'bower_components/jquery',
+                    //     src: ['jquery.*'],
+                    //     dest: '<%= web.dist %>/resources/js'
+                    // },
+                    // {
+                    //     expand: true,
+                    //     cwd: 'bower_components/bootstrap/dist/js',
+                    //     src: ['bootstrap.min.js'],
+                    //     dest: '<%= web.dist %>/resources/js'
+                    // }
                 ]
             },
             // 拷贝html文件从源文件目录到build目录
@@ -254,7 +256,7 @@ module.exports = function (grunt) {
                         baseDir: "dist",
                         directory: true
                     },
-                    startPath: "views/index.html"
+                    startPath: "views/Channel_HD.html"
                 }
             }
         },
